@@ -1,6 +1,6 @@
 class Animal
     def speak
-      raise NotImplementedError, "Subclasses must implement the 'speak' method."
+      ""
     end
 end
   

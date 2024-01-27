@@ -1,16 +1,14 @@
-class Shape
-    def area
-      raise NotImplementedError, "Subclasses must implement the 'area' method."
-    end
-end
-  
-class Circle < Shape
+class Circle
     def initialize(radius)
       @radius = radius
     end
+    
+    def radius_squared
+      @radius**2
+    end
   
     def area
-      Math::PI * @radius**2
+      Math::PI * radius_squared
     end
 end
   
